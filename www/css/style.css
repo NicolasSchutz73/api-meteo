@@ -56,9 +56,19 @@ a {
   text-decoration: none;
 }
 
+.active {
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  width: 102px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 p, span {
   font-family: Roboto, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #FFFFFF;
 }
 
@@ -72,8 +82,50 @@ span {
   line-height: 150%;
 }
 
+.active {
+  color: #000000;
+  font-weight: 400;
+}
+
+footer {
+  height: 7.5rem;
+  width: 100%;
+}
+footer .timeline {
+  height: 100%;
+  padding: 0 17.4375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
 body {
-  background-color: yellow;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(72.85deg, #D9547B 0%, #F8AD48 100%);
+}
+body main {
+  flex-grow: 1;
+}
+body main .container {
+  height: 100%;
+}
+body main .container .list-forecast {
+  display: flex;
+  flex-direction: column;
+}
+body main .container .list-forecast .wind-container {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
