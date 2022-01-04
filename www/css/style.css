@@ -56,4 +56,20 @@ a {
   text-decoration: none;
 }
 
+p, span {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 40px;
+  line-height: 120%;
+}
+
+span {
+  font-size: 16px;
+  line-height: 150%;
+}
+
 /*# sourceMappingURL=style.css.map */
