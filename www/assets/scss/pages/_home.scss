@@ -12,15 +12,36 @@ body {
 
     .container {
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: toRem(79) toRem(96) toRem(0) toRem(202);
 
 
-      .list-forecast {
+      .date {
+        margin-bottom: toRem(48);
+      }
+
+      .list-forecasts {
         display: flex;
         flex-direction: column;
 
 
-        .wind-container {
+        .container-forecast {
           display: flex;
+          border-bottom: 1px solid $white;
+          justify-content: space-between;
+          width: 26vw;
+          padding: toRem(16) 0;
+
+
+          .frame {
+            display: flex;
+
+          }
+
+          .frame > div {
+            margin: 0 toRem(4);
+          }
         }
       }
     }

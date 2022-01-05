@@ -119,13 +119,29 @@ body main {
 }
 body main .container {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4.9375rem 6rem 0rem 12.625rem;
 }
-body main .container .list-forecast {
+body main .container .date {
+  margin-bottom: 3rem;
+}
+body main .container .list-forecasts {
   display: flex;
   flex-direction: column;
 }
-body main .container .list-forecast .wind-container {
+body main .container .list-forecasts .container-forecast {
   display: flex;
+  border-bottom: 1px solid #FFFFFF;
+  justify-content: space-between;
+  width: 26vw;
+  padding: 1rem 0;
+}
+body main .container .list-forecasts .container-forecast .frame {
+  display: flex;
+}
+body main .container .list-forecasts .container-forecast .frame > div {
+  margin: 0 0.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
