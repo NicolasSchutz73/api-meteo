@@ -12,11 +12,11 @@ $.ajax(settings).done(function (response) {
     console.log(response);
 
     $('div.city p').text(response.data[0].city_name);
+    $('div#wind span').text(Math.round(response.data[0].wind_spd) +' km/h');
+    $('div#sunrise span').text(response.data[0].sunrise);
+    $('div#sunset span').text(response.data[0].sunset);
+    $('div#precipitation span').text(response.data[0].precip+' mm');
     $('h1.celsus').text(Math.round(response.data[0].temp)+'°');
-    $('li.km').text(Math.round(response.data[0].wind_spd) +' km/h');
-    $('li.sunrise').text(response.data[0].sunrise);
-    $('li.sunset').text(response.data[0].sunset);
-    $('li.Precipitation').text(response.data[0].precip+' mm');
 
     let date = new Date();
     numberday = date.getDate();
@@ -25,7 +25,7 @@ $.ajax(settings).done(function (response) {
     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let day = weekday[date.getDay()];
 
-    $('h1.date').text(day +" "+numberday+" "+name);
+    $('div.date p').text(day +" "+numberday+" "+name);
 });
 
 // search bar
