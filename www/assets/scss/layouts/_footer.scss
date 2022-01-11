@@ -10,5 +10,15 @@ footer {
     align-items: center;
     justify-content: space-between;
 
+    span {
+      border-radius: 100px;
+      width: 102px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: none;
+    }
   }
 }
